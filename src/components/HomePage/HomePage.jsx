@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-// import GymCard from "../GymCard/GymCard";
-import GymCardUser from "../GymCard/GymCardUser";
-// import NavBar from "../NavBar/NavBar";
-import NavBarUser from "../NavBar/NavBarUser";
+import GymCard from "../GymCard/GymCard";
+import NavBar from "../NavBar/NavBar";
 import "./HomePage.css";
 
-function HomePageUser({ gyms }) {
+function HomePage({ gyms }) {
   const [search, setSearch] = useState("");
 
   const displayGym = gyms.filter((gym) => {
@@ -16,7 +14,7 @@ function HomePageUser({ gyms }) {
   });
   return (
     <>
-      <NavBarUser />
+      <NavBar />
 
       <div id="homepage">
         <div className="col-md-6 offset-md-3 p-3">
@@ -37,7 +35,7 @@ function HomePageUser({ gyms }) {
         <div id="homeCard" className="card p-3">
           <div className="row">
             {displayGym.map((gym) => (
-              <GymCardUser key={gym.id} gym={gym} />
+              <GymCard key={gym.id} gym={gym} />
             ))}
           </div>
         </div>
@@ -46,4 +44,4 @@ function HomePageUser({ gyms }) {
   );
 }
 
-export default HomePageUser;
+export default HomePage;
