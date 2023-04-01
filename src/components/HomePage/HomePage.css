@@ -1,0 +1,17 @@
+#homepage
+{
+    padding: 2%;
+    background-color: #222222;
+    font-family: 'Nunito', sans-serif;
+    /* display: flex; */
+}
+
+#searchBar
+{
+    background-color: #c2bdbd;
+}
+
+#homeCard
+{
+    background-color: #c2bdbd;
+}
