@@ -98,7 +98,7 @@ function SignUp() {
           className="btn btn-outline-dark btn-sm m-4"
           disabled={!isFormValid}
         >
-          Log In
+          Sign Up
         </button>
         {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
         <p>
